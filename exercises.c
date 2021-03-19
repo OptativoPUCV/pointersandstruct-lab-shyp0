@@ -135,12 +135,9 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   Vector *v=crearVector(2);
   Vector *p=crearVector(2);
-  v->datos[0]=a1;
-  v->datos[1]=a2;
-  p->datos[0]=b1;
-  p->datos[1]=b2;
+  asignarValor(v,0,a1);
+  asignarValor(v,1,a2);
+  asignarValor(p,0,b1);
+  asignarValor(p,1,b2);
   sumaV(v,p,c);
-
-
-    
 }
